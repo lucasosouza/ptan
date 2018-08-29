@@ -15,7 +15,7 @@ from .common import utils
 Experience = namedtuple('Experience', ['state', 'action', 'reward', 'done'])
 
 
-class ExperienceSource:
+class ExperienceSource(object):
     """
     Simple n-step experience source using single or multiple environments
 
